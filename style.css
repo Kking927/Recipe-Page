@@ -120,6 +120,7 @@ body {
 }
 
 .recipe-header p {
+  margin-block-end: var(--spacing-xl);
   line-height: 1.5;
 }
 
