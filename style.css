@@ -78,7 +78,7 @@ body {
 
 .recipe-card {
   background-color: var(--color-white);
-  max-width: 736px;
+  max-width: 650px;
   width: 100%;
   border-radius: var(--radius-lg);
   padding: var(--card-padding);
@@ -116,7 +116,7 @@ body {
 .recipe-image-container {
   overflow: hidden;
   border-radius: var(--radius-md);
-  aspect-ratio: 2.3 / 1;
+  aspect-ratio: 3 / 1;
   margin-block-end: var(--header-gap);
 }
 
