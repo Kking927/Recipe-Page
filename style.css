@@ -84,7 +84,7 @@ body {
   color: var(--color-stone-900);
   font-size: var(--fs-h1);
   font-weight: var(--fw-regular);
-  line-height: 1.2;
+  line-height: 1.1;
   margin-block-end: var(--spacing-lg);
 }
 
@@ -205,7 +205,7 @@ hr {
 
 .nutrition-table th, 
 .nutrition-table td {
-  padding-block: var(--spacing-xl); 
+  padding-block: var(--spacing-lg); 
   padding-inline: var(--spacing-xl);
   text-align: left;
   font-family: var(--font-family-body);
