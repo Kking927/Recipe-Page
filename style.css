@@ -10,29 +10,29 @@
   --color-rose-50: hsl(330, 100%, 98%);
 
   /* Typography - Families & Weights */
-  --font-family-heading: 'Young Serif', serif;
-  --font-family-body: 'Outfit', sans-serif;
+  --font-family-heading: "Young Serif", serif;
+  --font-family-body: "Outfit", sans-serif;
   --fw-regular: 400;
   --fw-semibold: 600;
   --fw-bold: 700;
-  
+
   /* Typography - Sizes */
-  --fs-body: 0.875rem;     /* 14px */
-  --fs-h1: 2rem;          /* 32px */
-  --fs-h2: 1.125rem;      /* 18px */
-  --fs-h3: 0.875rem;      /* 14px */
-  --fs-small: 0.75rem;    /* 12px */
+  --fs-body: 1rem; /* 16px */
+  --fs-h1: 2.25rem; /* 36px */
+  --fs-h2: 1.25rem; /* 20px */
+  --fs-h3: 1.125rem; /* 18px */
+  --fs-small: 0.875rem; /* 14px */
 
   /* Spacing Scale */
-  --spacing-xxs: 0.25rem;     /* 4px */
-  --spacing-xs: 0.5rem;       /* 8px */
-  --spacing-s: 0.625rem;      /* 10px */
-  --spacing-sm: 0.75rem;      /* 12px */
-  --spacing-md: 1rem;         /* 16px */
-  --spacing-lg: 1.5rem;       /* 24px */
-  --spacing-lg-plus: 1.75rem;  /* 28px */
-  --spacing-xl: 2rem;         /* 32px */
-  --spacing-xxl: 2.5rem;      /* 40px */
+  --spacing-xxs: 0.25rem; /* 4px */
+  --spacing-xs: 0.5rem; /* 8px */
+  --spacing-s: 0.625rem; /* 10px */
+  --spacing-sm: 0.75rem; /* 12px */
+  --spacing-md: 1rem; /* 16px */
+  --spacing-lg: 1.5rem; /* 24px */
+  --spacing-lg-plus: 1.75rem; /* 28px */
+  --spacing-xl: 2rem; /* 32px */
+  --spacing-xxl: 2.5rem; /* 40px */
 
   /* Section Gaps & Girders */
   --header-gap: var(--spacing-lg);
@@ -41,14 +41,16 @@
   --hr-spacing: var(--spacing-xl);
 
   /* Border Radius Scale */
-  --radius-xs: 6px;   /* For highlights */
-  --radius-sm: 8px;   /* For the prep-box */
-  --radius-md: 12px;  /* For the hero image */
-  --radius-lg: 24px;  /* For the main recipe card */
+  --radius-xs: 6px; /* For highlights */
+  --radius-sm: 8px; /* For the prep-box */
+  --radius-md: 12px; /* For the hero image */
+  --radius-lg: 24px; /* For the main recipe card */
 }
 
 /* Base Resets */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -86,7 +88,9 @@ body {
   margin-block-end: var(--spacing-lg);
 }
 
-.ingredients h2, .instructions h2, .nutrition h2 {
+.ingredients h2,
+.instructions h2,
+.nutrition h2 {
   font-family: var(--font-family-heading);
   color: var(--color-brown-800);
   font-size: var(--fs-h2);
@@ -107,7 +111,7 @@ body {
   overflow: hidden;
   border-radius: var(--radius-md);
   margin-block-end: var(--header-gap);
-  isolation: isolate; 
+  isolation: isolate;
 }
 
 .hero-image {
@@ -134,7 +138,9 @@ body {
   display: block;
 }
 
-.prep-box ul, .ingredients ul, .instructions ol {
+.prep-box ul,
+.ingredients ul,
+.instructions ol {
   padding-left: var(--spacing-md);
 }
 
@@ -156,7 +162,8 @@ hr {
 }
 
 /* Highlight Hover Effect */
-.ingredients li, .instructions li {
+.ingredients li,
+.instructions li {
   padding: var(--spacing-xxs) var(--spacing-xs);
   border-radius: var(--radius-xs);
   margin-bottom: var(--spacing-xs);
@@ -165,7 +172,8 @@ hr {
   transition: background-color 0.2s ease;
 }
 
-.ingredients li:hover, .instructions li:hover {
+.ingredients li:hover,
+.instructions li:hover {
   background-color: var(--color-stone-100);
   cursor: default;
 }
@@ -176,7 +184,7 @@ hr {
 
 /* Nutrition Section */
 .nutrition {
-  padding-block-end: var(--spacing-xs); 
+  padding-block-end: var(--spacing-xs);
 }
 
 .nutrition p {
@@ -191,7 +199,7 @@ hr {
 
 .nutrition-table td {
   padding: var(--spacing-sm) var(--spacing-xl);
-  border-bottom: 2px solid var(--color-stone-150); 
+  border-bottom: 2px solid var(--color-stone-150);
   color: var(--color-stone-600);
   font-family: var(--font-family-body);
 }
