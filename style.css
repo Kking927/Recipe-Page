@@ -12,6 +12,9 @@
   /* Typography - Families & Weights */
   --font-family-heading: "Young Serif", serif;
   --font-family-body: "Outfit", sans-serif;
+  --fw-regular: 400; /* Regular */
+  --fw-semibold: 600; /* Semi-bold */
+  --fw-bold: 800; /* Bold */
 
   /* Typography - Sizes */
   --fs-body: .875rem; /* 14px */
@@ -31,9 +34,9 @@
   --spacing-xxl: 2.5rem; /* 40px */
 
   /* Section Gaps & Girders */
-  --header-gap: var(--spacing-sm);
+  --header-gap: var(--spacing-md);
   --section-gap: var(--spacing-md);
-  --card-padding: var(--spacing-lg);
+  --card-padding: var(--spacing-xxl);
   --hr-spacing: var(--spacing-md);
 
   /* Border Radius Scale */
@@ -70,12 +73,13 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
+  max-width: 90rem;
   min-height: 100%; 
 }
 
 .recipe-card {
   background-color: var(--color-white);
-  max-width: 615px;
+  max-width: 46rem;
   width: 100%;
   border-radius: var(--radius-lg);
   padding: var(--card-padding);
