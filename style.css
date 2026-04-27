@@ -34,9 +34,9 @@
   --spacing-xxl: 2.5rem; /* 40px */
 
   /* Section Gaps & Girders */
-  --header-gap: var(--spacing-lg);
+  --header-gap: var(--spacing-md);
   --section-gap: var(--spacing-md);
-  --card-padding: var(--spacing-xl);
+  --card-padding: var(--spacing-xxl);
   --hr-spacing: var(--spacing-md);
 
   /* Border Radius Scale */
@@ -79,7 +79,7 @@ body {
 
 .recipe-card {
   background-color: var(--color-white);
-  max-width: 29rem;
+  max-width: 35rem;
   width: 100%;
   border-radius: var(--radius-lg);
   padding: var(--card-padding);
