@@ -14,6 +14,7 @@
   --font-family-body: "Outfit", sans-serif;
   --fw-regular: 400;
   --fw-semibold: 600;
+  --fw-bold: 800;
 
   /* Typography - Sizes */
   --fs-body: .875rem; /* 14px */
@@ -103,32 +104,32 @@ body {
   margin-bottom: var(--spacing-md);
 }
 
+/* Hero Image and Hover Effect */
 .recipe-image-container {
-  display: block;
-  width: 100%;
   overflow: hidden;
   border-radius: var(--radius-md);
   margin-block-end: var(--header-gap);
-  isolation: isolate;
+  aspect-ratio: 16 / 9; 
 }
 
 .hero-image {
-  display: block;
   width: 100%;
-  height: auto;
-  object-fit: cover; 
-  transition: transform 0.4s ease;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease-in-out;
 }
 
 .recipe-image-container:hover .hero-image {
   transform: scale(1.05);
 }
 
+/* Hero Text */
 .recipe-header p {
   margin-block-end: var(--spacing-lg);
   line-height: 1.5;
 }
 
+/* Prep Box */
 .prep-box {
   background-color: var(--color-rose-50);
   padding: var(--spacing-md) var(--spacing-lg);
@@ -203,7 +204,6 @@ hr {
   padding-block: var(--spacing-xs);
   padding-inline: var(--spacing-xl);
   text-align: left;
-  font-family: var(--font-family-body);
   color: var(--color-stone-600);
 }
 
@@ -216,6 +216,7 @@ hr {
 .nutrition-table td.stat {
   color: var(--color-brown-800);
   text-align: left;
+  font-weight: var(--fw-semibold);
 }
 
 .nutrition-table tr:last-child {
