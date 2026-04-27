@@ -138,9 +138,7 @@ body {
   display: block;
 }
 
-.prep-box ul,
-.ingredients ul,
-.instructions ol {
+.prep-box ul {
   padding-left: var(--spacing-md);
 }
 
@@ -161,14 +159,13 @@ hr {
   margin-block: var(--hr-spacing);
 }
 
-/* Highlight Hover Effect */
+/* Ingredients, Instructions, and Hover Effects */
 .ingredients li,
 .instructions li {
   padding: var(--spacing-xxs) var(--spacing-xs);
   border-radius: var(--radius-xs);
-  margin-bottom: var(--spacing-xs);
   width: fit-content;
-  list-style-position: inside;
+  list-style-position: outside;
   transition: background-color 0.2s ease;
 }
 
@@ -180,6 +177,11 @@ hr {
 
 .instructions li strong {
   margin-right: var(--spacing-xxs);
+}
+
+.ingredients ul li::marker, .instructions ol li::marker {
+  color: var(--color-brown-800);
+  font-weight: var(--fw-semibold);
 }
 
 /* Nutrition Section */
@@ -198,20 +200,26 @@ hr {
 }
 
 .nutrition-table tr {
-  border-block-end: 2px solid var(--color-stone-150);
+  border-block-end: 1px solid var(--color-stone-150);
+}
+
+.nutrition-table th, 
+.nutrition-table td {
+  padding-block: var(--spacing-xl); 
+  padding-inline: var(--spacing-xl);
+  text-align: left;
+  font-family: var(--font-family-body);
+  color: var(--color-stone-600);
 }
 
 .nutrition-table th {
-  text-align: left;
-  font-weight: 400;
-  color: #5f564d;
-  padding-inline-start: var(--spacing-xl);
+  font-weight: var(--fw-regular);
+  color: var(--color-stone-600);
 }
 
-.nutrition-table td {
-  padding: var(--spacing-sm) var(--spacing-xl);
-  color: var(--color-stone-600);
-  font-family: var(--font-family-body);
+.nutrition-table td.stat {
+  color: var(--color-brown-800);
+  text-align: right;
 }
 
 .nutrition-table td:last-child {
@@ -219,6 +227,6 @@ hr {
   font-weight: var(--fw-semibold);
 }
 
-.nutrition-table tr:last-child td {
-  border-bottom: none;
+.nutrition-table tr:last-child {
+  border-block-end: none;
 }
