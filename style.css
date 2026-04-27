@@ -15,13 +15,13 @@
   --fw-regular: 400;
   --fw-semibold: 600;
   --fw-bold: 700;
-
+  
   /* Typography - Sizes */
-  --fs-body: 16px;
-  --fs-h1: 2.5rem;   /* 40px */
-  --fs-h2: 1.75rem;  /* 28px */
-  --fs-h3: 1.25rem;  /* 20px */
-  --fs-small: 0.8rem;
+  --fs-body: 0.875rem;     /* 14px */
+  --fs-h1: 2rem;          /* 32px */
+  --fs-h2: 1.125rem;      /* 18px */
+  --fs-h3: 0.875rem;      /* 14px */
+  --fs-small: 0.75rem;    /* 12px */
 
   /* Spacing Scale */
   --spacing-xxs: 0.25rem;     /* 4px */
@@ -76,11 +76,12 @@ body {
   display: flow-root;
 }
 
-/* Typography Global */
+/* Gobal Typography */
 .recipe-header h1 {
   font-family: var(--font-family-heading);
   color: var(--color-stone-900);
   font-size: var(--fs-h1);
+  font-weight: var(--fw-regular);
   line-height: 1.2;
   margin-block-end: var(--spacing-lg);
 }
@@ -89,6 +90,7 @@ body {
   font-family: var(--font-family-heading);
   color: var(--color-brown-800);
   font-size: var(--fs-h2);
+  font-weight: var(--fw-regular);
   margin-bottom: var(--spacing-md);
 }
 
@@ -196,7 +198,7 @@ hr {
 
 .nutrition-table td:last-child {
   color: var(--color-brown-800);
-  font-weight: var(--fw-bold);
+  font-weight: var(--fw-semibold);
 }
 
 .nutrition-table tr:last-child td {
