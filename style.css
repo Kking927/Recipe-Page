@@ -34,10 +34,10 @@
   --spacing-xxl: 2.5rem; /* 40px */
 
   /* Section Gaps & Girders */
-  --header-gap: var(--spacing-md);
-  --section-gap: var(--spacing-sm);
+  --header-gap: var(--spacing-sm);
+  --section-gap: var(--spacing-xs);
   --card-padding: var(--spacing-xxl);
-  --hr-spacing: var(--spacing-md);
+  --hr-spacing: var(--spacing-sm);
 
   /* Border Radius Scale */
   --radius-xs: 6px; /* For highlights */
@@ -83,7 +83,7 @@ body {
   max-width: 35rem;
   width: 100%;
   border-radius: var(--radius-lg);
-  padding: var(--card-padding);
+  padding: var(--spacing-lg) var(--spacing-xxl);
   display: flow-root;
 }
 
@@ -144,7 +144,7 @@ body {
 /* Prep Box */
 .prep-box {
   background-color: var(--color-rose-50);
-  padding: var(--spacing-sm) var(--spacing-md);
+  padding: var(--spacing-xs) var(--spacing-sm);
   border-radius: var(--radius-sm);
   margin-block-end: var(--section-gap);
   display: block;
@@ -234,6 +234,11 @@ hr {
 
 .nutrition-table tr:last-child {
   border-block-end: none;
+}
+
+.nutrition-table tr:last-child th,
+.nutrition-table tr:last-child td {
+  padding-bottom: 0;
 }
 
 /* --- Mobile Styles (Up to 650px) --- */
