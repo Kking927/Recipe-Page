@@ -109,7 +109,6 @@ body {
   overflow: hidden;
   border-radius: var(--radius-md);
   margin-block-end: var(--header-gap);
-  aspect-ratio: 16 / 9; 
 }
 
 .hero-image {
