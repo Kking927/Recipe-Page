@@ -191,7 +191,7 @@ hr {
 
 .nutrition p {
   color: var(--color-stone-600);
-  margin-block-end: var(--spacing-lg);
+  margin-block-end: var(--spacing-sm);
 }
 
 .nutrition-table {
