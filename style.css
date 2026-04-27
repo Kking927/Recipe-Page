@@ -12,9 +12,6 @@
   /* Typography - Families & Weights */
   --font-family-heading: "Young Serif", serif;
   --font-family-body: "Outfit", sans-serif;
-  --fw-regular: 400;
-  --fw-semibold: 600;
-  --fw-bold: 800;
 
   /* Typography - Sizes */
   --fs-body: .875rem; /* 14px */
