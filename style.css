@@ -34,7 +34,7 @@
   --spacing-xxl: 2.5rem; /* 40px */
 
   /* Section Gaps & Girders */
-  --header-gap: var(--spacing-md);
+  --header-gap: var(--spacing-lg);
   --section-gap: var(--spacing-md);
   --card-padding: var(--spacing-xxl);
   --hr-spacing: var(--spacing-md);
@@ -118,7 +118,7 @@ body {
   width: 100%;
   overflow: hidden;
   border-radius: var(--radius-md);
-  aspect-ratio: 655 / 300;
+  aspect-ratio: 2 / 1;
   margin-block-end: var(--header-gap);
 }
 
