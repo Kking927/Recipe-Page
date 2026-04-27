@@ -19,8 +19,8 @@
   /* Typography - Sizes */
   --fs-body: 0.625rem; /* 10px */
   --fs-h1: 1.875rem; /* 30px */
-  --fs-h2: 1rem; /* 16px */
-  --fs-h3: 1.125; /* 18px */
+  --fs-h2: 0.875rem; /* 14px */
+  --fs-h3: 1.25rem; /* 20px */
 
   /* Spacing Scale */
   --spacing-xxs: 0.25rem; /* 4px */
