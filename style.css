@@ -36,7 +36,7 @@
   /* Section Gaps & Girders */
   --header-gap: var(--spacing-lg);
   --section-gap: var(--spacing-md);
-  --card-padding: var(--spacing-xxl);
+  --card-padding: var(--spacing-xl);
   --hr-spacing: var(--spacing-md);
 
   /* Border Radius Scale */
@@ -79,7 +79,7 @@ body {
 
 .recipe-card {
   background-color: var(--color-white);
-  max-width: 46rem;
+  max-width: 38.5rem;
   width: 100%;
   border-radius: var(--radius-lg);
   padding: var(--card-padding);
@@ -118,7 +118,7 @@ body {
   width: 100%;
   overflow: hidden;
   border-radius: var(--radius-md);
-  aspect-ratio: 2 / 1;
+  aspect-ratio: 2.15 / 1;
   margin-block-end: var(--header-gap);
 }
 
