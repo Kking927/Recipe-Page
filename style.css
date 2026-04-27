@@ -17,10 +17,10 @@
   --fw-bold: 800; /* Bold */
 
   /* Typography - Sizes */
-  --fs-body: 0.75rem; /* 12px */
+  --fs-body: 0.625rem; /* 10px */
   --fs-h1: 1.875rem; /* 30px */
   --fs-h2: 1rem; /* 16px */
-  --fs-h3: 1.25rem; /* 20px */
+  --fs-h3: 1.125; /* 18px */
 
   /* Spacing Scale */
   --spacing-xxs: 0.25rem; /* 4px */
@@ -36,7 +36,7 @@
   /* Section Gaps & Girders */
   --header-gap: var(--spacing-lg);
   --section-gap: var(--spacing-md);
-  --card-padding: var(--spacing-xxl);
+  --card-padding: var(--spacing-xl);
   --hr-spacing: var(--spacing-md);
 
   /* Border Radius Scale */
@@ -79,7 +79,7 @@ body {
 
 .recipe-card {
   background-color: var(--color-white);
-  max-width: 35rem;
+  max-width: 29rem;
   width: 100%;
   border-radius: var(--radius-lg);
   padding: var(--card-padding);
@@ -117,7 +117,7 @@ body {
 .recipe-image-container {
   width: 100%;
   overflow: hidden;
-  aspect-ratio: 2.4 / 1;
+  aspect-ratio: 2 / 1;
   border-radius: var(--radius-md);
   margin-block-end: var(--header-gap);
 }
