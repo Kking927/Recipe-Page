@@ -35,10 +35,10 @@
   --spacing-xxl: 2.5rem; /* 40px */
 
   /* Section Gaps & Girders */
-  --header-gap: var(--spacing-lg);
-  --section-gap: var(--spacing-xl);
+  --header-gap: var(--spacing-md);
+  --section-gap: var(--spacing-lg);
   --card-padding: var(--spacing-xl);
-  --hr-spacing: var(--spacing-xl);
+  --hr-spacing: var(--spacing-lg);
 
   /* Border Radius Scale */
   --radius-xs: 6px; /* For highlights */
@@ -118,6 +118,7 @@ body {
   display: block;
   width: 100%;
   height: auto;
+  object-fit: cover; 
   transition: transform 0.4s ease;
 }
 
@@ -185,10 +186,6 @@ hr {
 }
 
 /* Nutrition Section */
-.nutrition {
-  padding-block-end: var(--spacing-xs);
-}
-
 .nutrition p {
   color: var(--color-stone-600);
   margin-block-end: var(--spacing-sm);
@@ -223,11 +220,7 @@ hr {
   text-align: left;
 }
 
-.nutrition-table td:last-child {
-  color: var(--color-brown-800);
-  font-weight: var(--fw-semibold);
-}
-
 .nutrition-table tr:last-child {
   border-block-end: none;
+  padding-block-end: none;
 }
