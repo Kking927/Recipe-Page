@@ -215,11 +215,12 @@ hr {
 .nutrition-table th {
   font-weight: var(--fw-regular);
   color: var(--color-stone-600);
+  width: 50%;
 }
 
 .nutrition-table td.stat {
   color: var(--color-brown-800);
-  text-align: right;
+  text-align: left;
 }
 
 .nutrition-table td:last-child {
