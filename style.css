@@ -18,10 +18,10 @@
 
   /* Typography - Sizes */
   --fs-body: 0.625rem; /* 10px */
-  --fs-h1: 1.125rem; /* 18px */
+  --fs-h1: 1.25rem; /* 20px */
   --fs-h2: 0.75rem; /* 12px */
   --fs-h3: 0.875rem; /* 14px */
-  --fs-table: 0.5rem; /* 8px */
+  --fs-small: 0.5rem; /* 8px */
 
   /* Spacing Scale */
   --spacing-xxs: 0.25rem; /* 4px */
@@ -83,7 +83,7 @@ body {
 
 .recipe-card {
   background-color: var(--color-white);
-  max-width: 32rem;
+  max-width: 30rem;
   width: 100%;
   border-radius: var(--radius-lg);
   padding: var(--card-padding);
@@ -100,6 +100,13 @@ body {
   margin-block-end: var(--section-gap);
 }
 
+.prep-box h2 {
+  color: var(--color-rose-800);
+  font-size: var(--fs-h2);
+  font-weight: var(--fw-semibold);
+  margin-block-end: var(--section-gap);
+}
+
 .ingredients h3,
 .instructions h3,
 .nutrition h3 {
@@ -110,11 +117,8 @@ body {
   margin-block-end: var(--section-gap);
 }
 
-.prep-box h2 {
-  color: var(--color-rose-800);
-  font-size: var(--fs-h2);
-  font-weight: var(--fw-semibold);
-  margin-block-end: var(--section-gap);
+.prep-box li, .nutrition-table {
+  font-size: var(--fs-small);
 }
 
 .prep-box li strong, .instructions li strong, .ingredients li strong  {
@@ -224,7 +228,6 @@ hr {
 .nutrition-table {
   width: 100%;
   border-collapse: collapse;
-  font-size: var(--fs-table);
 }
 
 .nutrition-table tr {
