@@ -18,7 +18,7 @@
 
   /* Typography - Sizes */
   --fs-body: 0.625rem; /* 10px */
-  --fs-h1: 1.625rem; /* 26px */
+  --fs-h1: 1.5rem; /* 24px */
   --fs-h2: 0.75rem; /* 12px */
   --fs-h3: 1rem; /* 16px */
 
@@ -34,10 +34,11 @@
   --spacing-xxl: 2.5rem; /* 40px */
 
   /* Section Gaps & Girders */
-  --header-gap: var(--spacing-md);
+  --header-gap: var(--spacing-sm)
   --section-gap: var(--spacing-xs);
   --card-padding: var(--spacing-lg);
-  --hr-spacing: var(--spacing-sm);
+  --hr-spacing: var(--spacing-xs);
+  --li-spacing: ar(--spacing-xxs);
 
   /* Border Radius Scale */
   --radius-xs: 6px; /* For highlights */
@@ -94,7 +95,7 @@ body {
   font-size: var(--fs-h1);
   font-weight: var(--fw-regular);
   line-height: 1.1;
-  margin-block-end: var(--spacing-md);
+  margin-block-end: var(--section-gap);
 }
 
 .ingredients h3,
@@ -104,14 +105,14 @@ body {
   color: var(--color-brown-800);
   font-size: var(--fs-h3);
   font-weight: var(--fw-regular);
-  margin-block-end: var(--spacing-xs);
+  margin-block-end: var(--section-gap);
 }
 
 .prep-box h2 {
   color: var(--color-rose-800);
   font-size: var(--fs-h2);
   font-weight: var(--fw-semibold);
-  margin-block-end: var(--spacing-md);
+  margin-block-end: var(--section-gap);
 }
 
 /* Hero Image and Hover Effect */
@@ -120,7 +121,7 @@ body {
   aspect-ratio: 2.187 / 1;
   overflow: hidden;
   border-radius: var(--radius-md);
-  margin-block-end: var(--header-gap);
+  margin-block-end: var(--section-gap);
 }
 
 .hero-image {
@@ -155,7 +156,7 @@ body {
 }
 
 .prep-box li {
-  margin-block-end: var(--spacing-xs);
+  margin-block-end: var(--li-spacing);
   padding-left: var(--spacing-xs);
 }
 
@@ -181,7 +182,7 @@ hr {
 .ingredients li,
 .instructions li {
   padding-left: var(--spacing-xs);
-  margin-block-end: var(--spacing-xxs);
+  margin-block-end: var(--li-spacing);
   width: 100%;
   display: list-item;
   line-height: 1.5;
