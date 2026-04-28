@@ -64,16 +64,12 @@ body {
   font-family: var(--font-family-body);
   font-size: var(--fs-body);
   line-height: 1.4;
-
   background-color: var(--color-stone-100);
   color: var(--color-stone-600);
-
   min-height: 100vh;
-
   display: flex;
   justify-content: center;
   align-items: center;
-
   padding: var(--spacing-lg);
 }
 
@@ -90,14 +86,11 @@ body {
 /* Card (MAIN FIX for scaling behavior) */
 .recipe-card {
   background-color: var(--color-white);
-
   width: 100%;
   min-width: 23.4375rem; /* 375px */
   max-width: 37.5rem;    /* 600px */
-
   border-radius: var(--radius-lg);
   padding: var(--card-padding);
-
   display: flow-root;
 }
 
@@ -130,7 +123,6 @@ body {
   font-size: var(--fs-h3);
   font-weight: var(--fw-regular);
   color: var(--color-brown-800);
-
   margin-block-end: var(--section-gap);
 }
 
@@ -210,8 +202,7 @@ hr {
 }
 
 .ingredients li:hover,
-.instructions li:hover,
-.row:hover {
+.instructions li:hover {
   background-color: var(--color-stone-100);
 }
 
@@ -256,6 +247,10 @@ hr {
 .nutrition-table tr:last-child {
   border-block-end: none;
 }
+
+.row:hover {
+  background-color: var(--color-stone-100);
+} 
 
 /* --- Mobile Styles (Up to 650px) --- */
 @media (max-width: 40.625rem) {
