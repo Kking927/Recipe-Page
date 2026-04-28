@@ -34,7 +34,7 @@
   --spacing-xxl: 2.5rem; /* 40px */
 
   /* Section Gaps & Girders */
-  --header-gap: var(--spacing-sm)
+  --header-gap: var(--spacing-sm);
   --section-gap: var(--spacing-xs);
   --card-padding: var(--spacing-lg);
   --hr-spacing: var(--spacing-xs);
@@ -121,7 +121,7 @@ body {
   aspect-ratio: 2.187 / 1;
   overflow: hidden;
   border-radius: var(--radius-md);
-  margin-block-end: var(--section-gap);
+  margin-block-end: var(--header-gap);
 }
 
 .hero-image {
