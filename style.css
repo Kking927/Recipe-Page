@@ -21,6 +21,7 @@
   --fs-h1: 1.125rem; /* 18px */
   --fs-h2: 0.75rem; /* 12px */
   --fs-h3: 0.875rem; /* 14px */
+  --fs-table: 0.5rem; /* 8px */
 
   /* Spacing Scale */
   --spacing-xxs: 0.25rem; /* 4px */
@@ -114,6 +115,11 @@ body {
   font-size: var(--fs-h2);
   font-weight: var(--fw-semibold);
   margin-block-end: var(--section-gap);
+}
+
+.prep-box li strong, .instructions li strong, .ingredients li strong  {
+  font-size: inherit; 
+  font-weight: var(--fw-semibold); 
 }
 
 /* Hero Image and Hover Effect */
@@ -218,6 +224,7 @@ hr {
 .nutrition-table {
   width: 100%;
   border-collapse: collapse;
+  font-size: var(--fs-table);
 }
 
 .nutrition-table tr {
