@@ -128,7 +128,8 @@ body {
 
 /* Hero Image and Hover Effect */
 .recipe-image-container {
-  width: 100%;
+  width: 100%; 
+  max-width: 25rem;
   aspect-ratio: 2.187 / 1;
   max-height: 12.5rem;
   margin-inline: auto;
