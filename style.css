@@ -120,6 +120,8 @@ body {
 .recipe-image-container {
   width: 100%;
   aspect-ratio: 2.187 / 1;
+  max-height: 12.5rem;
+  margin-inline: auto;
   overflow: hidden;
   border-radius: var(--radius-md);
   margin-block-end: var(--header-gap);
@@ -169,7 +171,7 @@ body {
 /* HR Divider */
 hr {
   border: 0;
-  border-top: .5px solid var(--color-stone-150);
+  border-top: 0.5px solid var(--color-stone-150);
   margin-block: var(--hr-spacing);
 }
 
@@ -269,12 +271,14 @@ hr {
   }
 
   .recipe-image-container {
-    margin-inline: calc(var(--card-padding) * -1);
-    margin-block-start: calc(var(--card-padding) * -1);
+    height: clamp(8.75rem, 20vh, 12.5rem);
+    aspect-ratio: 2.187 / 1;
+    width: auto;
+    margin-inline: calc(var(--spacing-lg) * -1);
+    margin-block-start: calc(var(--spacing-lg) * -1);
     margin-block-end: var(--spacing-lg);
     border-radius: 0;
     overflow: hidden;
-    aspect-ratio: 2.187 / 1;
   }
 }
 
