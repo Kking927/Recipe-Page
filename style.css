@@ -34,7 +34,7 @@
   --spacing-xxl: 2.5rem; /* 40px */
 
   /* Section Gaps & Girders */
-  --header-gap: var(--spacing-sm);
+  --header-gap: var(--spacing-md);
   --section-gap: var(--spacing-xs);
   --card-padding: var(--spacing-lg);
   --hr-spacing: var(--spacing-sm);
@@ -117,7 +117,7 @@ body {
 /* Hero Image and Hover Effect */
 .recipe-image-container {
   width: 100%;
-  aspect-ratio: 2.15 / 1;
+  aspect-ratio: 2.187 / 1;
   overflow: hidden;
   border-radius: var(--radius-md);
   margin-block-end: var(--header-gap);
@@ -137,7 +137,7 @@ body {
 
 /* Hero Text */
 .recipe-header p {
-  margin-block-end: var(--spacing-lg);
+  margin-block-end: var(--spacing-sm);
   line-height: 1.5;
 }
 
@@ -181,7 +181,7 @@ hr {
 .ingredients li,
 .instructions li {
   padding-left: var(--spacing-xs);
-  margin-bottom: var(--spacing-sm);
+  margin-bottom: var(--spacing-xs);
   width: 100%;
   display: list-item;
   line-height: 1.5;
