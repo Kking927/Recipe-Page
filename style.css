@@ -18,9 +18,9 @@
 
   /* Typography - Sizes */
   --fs-body: 0.625rem; /* 10px */
-  --fs-h1: 1.25rem; /* 20px */
+  --fs-h1: 1.125rem; /* 18px */
   --fs-h2: 0.75rem; /* 12px */
-  --fs-h3: 1rem; /* 16px */
+  --fs-h3: 0.875rem; /* 14px */
 
   /* Spacing Scale */
   --spacing-xxs: 0.25rem; /* 4px */
@@ -275,5 +275,11 @@ hr {
     border-radius: 0;
     overflow: hidden;
     aspect-ratio: 2.187 / 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-image {
+    transition: none;
   }
 }
