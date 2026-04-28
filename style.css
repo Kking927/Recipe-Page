@@ -181,7 +181,7 @@ hr {
 .ingredients li,
 .instructions li {
   padding-inline-start: var(--spacing-xs); 
-  margin-bottom: var(--spacing-sm);
+  margin-block-end: var(--spacing-sm);
   width: 100%;
   display: list-item;
   line-height: 1.5;
@@ -196,7 +196,7 @@ hr {
 }
 
 .instructions li strong {
-  margin-right: var(--spacing-xxs);
+  margin-inline-end: var(--spacing-xxs);
 }
 
 .ingredients ul li::marker,
@@ -250,12 +250,12 @@ hr {
 }
 
 /* --- Mobile Styles (Up to 650px) --- */
-/* DEFAULT STYLES (Mobile First) */
+/* --- BASE STYLES (Mobile First) --- */
 body {
   font-family: var(--font-family-body);
   font-size: var(--fs-body);
-  background-color: var(--color-white);
   color: var(--color-stone-600);
+  background-color: var(--color-white); /* Default for mobile */
   display: flex;
   flex-direction: column;
   padding: 0; 
@@ -264,11 +264,12 @@ body {
 
 .recipe-card {
   width: 100%;
-  padding: var(--spacing-lg); 
   display: flow-root;
+  padding: var(--spacing-lg); 
+  /* Note: We leave border-radius and max-width for the Desktop query */
 }
 
-/* DESKTOP ADAPTATION */
+/* --- DESKTOP --- */
 @media (min-width: 40.625rem) {
   body {
     background-color: var(--color-stone-100);
@@ -283,13 +284,13 @@ body {
     max-width: 35rem;
     background-color: var(--color-white);
     border-radius: var(--radius-lg);
-    /* Updated this to match your T/B 'lg' and Side 'xxl' preference from earlier */
+    /* Logical spacing: lg top/bottom, xxl sides */
     padding-block: var(--spacing-lg);
     padding-inline: var(--spacing-xxl);
   }
 }
 
-/* ACCESSIBILITY */
+/* --- ACCESSIBILITY LAYER --- */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
