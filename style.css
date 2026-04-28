@@ -130,8 +130,8 @@ body {
 .recipe-image-container {
   width: 100%; 
   max-width: 25rem;
-  aspect-ratio: 2.187 / 1;
-  max-height: 11.5rem;
+  aspect-ratio: 2.25 / 1;
+  max-height: 11.11rem;
   margin-inline: auto;
   overflow: hidden;
   border-radius: var(--radius-md);
