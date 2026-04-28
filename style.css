@@ -36,7 +36,7 @@
   /* Section Gaps & Girders */
   --header-gap: var(--spacing-sm);
   --section-gap: var(--spacing-xs);
-  --card-padding: var(--spacing-xxl);
+  --card-padding: var(--spacing-xl);
   --hr-spacing: var(--spacing-sm);
 
   /* Border Radius Scale */
