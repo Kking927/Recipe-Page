@@ -36,7 +36,7 @@
   /* Section Gaps & Girders */
   --header-gap: var(--spacing-sm);
   --section-gap: var(--spacing-xs);
-  --card-padding: var(--spacing-xl);
+  --card-padding: var(--spacing-lg);
   --hr-spacing: var(--spacing-sm);
 
   /* Border Radius Scale */
@@ -174,18 +174,18 @@ hr {
 /* Ingredients, Instructions, and Hover Effects */
 .ingredients ul, 
 .instructions ol {
-  padding-left: var(--spacing-lg); 
+  padding-left: var(--spacing-md); 
   list-style-position: outside;
 }
 
 .ingredients li,
 .instructions li {
-  padding-left: var(--spacing-sm); 
+  padding-left: var(--spacing-xs); 
   margin-bottom: var(--spacing-sm);
-  border-radius: var(--radius-xs);
   width: 100%;
-  list-style-position: outside;
   display: list-item;
+  line-height: 1.5;
+  border-radius: var(--radius-xs);
   transition: background-color 0.2s ease;
 }
 
