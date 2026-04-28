@@ -80,10 +80,10 @@ body {
 
 .recipe-card {
   background-color: var(--color-white);
-  max-width: 35rem;
+  max-width: 32rem;
   width: 100%;
   border-radius: var(--radius-lg);
-  padding: var(--spacing-lg) var(--spacing-xxl);
+  padding: var(--card-padding);
   display: flow-root;
 }
 
@@ -151,12 +151,12 @@ body {
 }
 
 .prep-box ul {
-  padding-left: var(--spacing-md);
+  padding-left: var(--spacing-xl);
 }
 
 .prep-box li {
-  margin-block-end: var(--spacing-s);
-  padding-left: var(--spacing-s);
+  margin-block-end: var(--spacing-xs);
+  padding-left: var(--spacing-xs);
 }
 
 .prep-box li::marker {
@@ -172,12 +172,20 @@ hr {
 }
 
 /* Ingredients, Instructions, and Hover Effects */
+.ingredients ul, 
+.instructions ol {
+  padding-left: var(--spacing-lg); 
+  list-style-position: outside;
+}
+
 .ingredients li,
 .instructions li {
-  padding: var(--spacing-xxs) var(--spacing-xs);
+  padding-left: var(--spacing-sm); 
+  margin-bottom: var(--spacing-sm);
   border-radius: var(--radius-xs);
-  width: fit-content;
+  width: 100%;
   list-style-position: outside;
+  display: list-item;
   transition: background-color 0.2s ease;
 }
 
