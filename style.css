@@ -61,6 +61,7 @@
 body {
   font-family: var(--font-family-body);
   font-size: var(--fs-body);
+  line-height: 1.2;
   background-color: var(--color-stone-100);
   color: var(--color-stone-600);
   min-height: 100vh;
@@ -153,7 +154,6 @@ body {
 /* Hero Text */
 .recipe-header p {
   margin-block-end: var(--spacing-sm);
-  line-height: 1.5;
 }
 
 /* Prep Box */
@@ -199,7 +199,6 @@ hr {
   margin-block-end: var(--li-spacing);
   width: 100%;
   display: list-item;
-  line-height: 1.5;
   border-radius: var(--radius-xs);
   transition: background-color 0.2s ease;
 }
