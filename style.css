@@ -117,8 +117,8 @@ body {
 /* Hero Image and Hover Effect */
 .recipe-image-container {
   width: 100%;
+  aspect-ratio: 2.15 / 1;
   overflow: hidden;
-  aspect-ratio: 2 / 1;
   border-radius: var(--radius-md);
   margin-block-end: var(--header-gap);
 }
@@ -151,12 +151,12 @@ body {
 }
 
 .prep-box ul {
-  padding-inline-start: var(--spacing-xl);
+  padding-left: var(--spacing-xl);
 }
 
 .prep-box li {
   margin-block-end: var(--spacing-xs);
-  padding-inline-start: var(--spacing-xs);
+  padding-left: var(--spacing-xs);
 }
 
 .prep-box li::marker {
@@ -172,16 +172,16 @@ hr {
 }
 
 /* Ingredients, Instructions, and Hover Effects */
-.ingredients ul, 
+.ingredients ul,
 .instructions ol {
-  padding-inline-start: var(--spacing-md); 
+  padding-left: var(--spacing-md);
   list-style-position: outside;
 }
 
 .ingredients li,
 .instructions li {
-  padding-inline-start: var(--spacing-xs); 
-  margin-block-end: var(--spacing-sm);
+  padding-left: var(--spacing-xs);
+  margin-bottom: var(--spacing-sm);
   width: 100%;
   display: list-item;
   line-height: 1.5;
@@ -196,7 +196,7 @@ hr {
 }
 
 .instructions li strong {
-  margin-inline-end: var(--spacing-xxs);
+  margin-right: var(--spacing-xxs);
 }
 
 .ingredients ul li::marker,
@@ -246,58 +246,30 @@ hr {
 
 .nutrition-table tr:last-child th,
 .nutrition-table tr:last-child td {
-  padding-block-end: 0;
+  padding-bottom: 0;
 }
 
 /* --- Mobile Styles (Up to 650px) --- */
-/* --- BASE STYLES (Mobile First) --- */
-body {
-  font-family: var(--font-family-body);
-  font-size: var(--fs-body);
-  color: var(--color-stone-600);
-  background-color: var(--color-white); /* Default for mobile */
-  display: flex;
-  flex-direction: column;
-  padding: 0; 
-  overflow-x: hidden;
-}
-
-.recipe-card {
-  width: 100%;
-  display: flow-root;
-  padding: var(--spacing-lg); 
-  /* Note: We leave border-radius and max-width for the Desktop query */
-}
-
-/* --- DESKTOP --- */
-@media (min-width: 40.625rem) {
+@media (max-width: 650px) {
   body {
-    background-color: var(--color-stone-100);
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding-block: var(--spacing-xxl);
-    padding-inline: var(--spacing-md);
+    justify-content: flex-start;
+    padding: 0;
+    background-color: var(--color-white);
   }
 
   .recipe-card {
-    max-width: 35rem;
-    background-color: var(--color-white);
-    border-radius: var(--radius-lg);
-    /* Logical spacing: lg top/bottom, xxl sides */
-    padding-block: var(--spacing-lg);
-    padding-inline: var(--spacing-xxl);
+    max-width: 100%;
+    border-radius: 0;
+    padding: var(--spacing-lg);
+    verflow: hidden;
   }
-}
 
-/* --- ACCESSIBILITY LAYER --- */
-@media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms;
-    animation-iteration-count: 1;
-    transition-duration: 0.01ms;
-    scroll-behavior: auto;
+  .recipe-image-container {
+    margin-inline: calc(var(--card-padding) * -1);
+    margin-top: calc(var(--card-padding) * -1);
+    margin-bottom: var(--spacing-lg);
+    border-radius: 0;
+    overflow: hidden;
+    aspect-ratio: 16 / 9;
   }
 }
