@@ -18,7 +18,7 @@
 
   /* Typography - Sizes */
   --fs-body: 0.625rem; /* 10px */
-  --fs-h1: 1.5rem; /* 24px */
+  --fs-h1: 1.25rem; /* 20px */
   --fs-h2: 0.75rem; /* 12px */
   --fs-h3: 1rem; /* 16px */
 
@@ -38,7 +38,8 @@
   --section-gap: var(--spacing-xs);
   --card-padding: var(--spacing-lg);
   --hr-spacing: var(--spacing-xs);
-  --li-spacing: ar(--spacing-xxs);
+  --li-spacing: var(--spacing-xxs);
+  --td-block: var(--spacing-xxs);
 
   /* Border Radius Scale */
   --radius-xs: 6px; /* For highlights */
@@ -152,12 +153,12 @@ body {
 }
 
 .prep-box ul {
-  padding-left: var(--spacing-xl);
+  padding-inline-start: var(--spacing-xl);
 }
 
 .prep-box li {
   margin-block-end: var(--li-spacing);
-  padding-left: var(--spacing-xs);
+  padding-inline-start: var(--spacing-xs);
 }
 
 .prep-box li::marker {
@@ -168,20 +169,20 @@ body {
 /* HR Divider */
 hr {
   border: 0;
-  border-top: 1px solid var(--color-stone-150);
+  border-top: .5px solid var(--color-stone-150);
   margin-block: var(--hr-spacing);
 }
 
 /* Ingredients, Instructions, and Hover Effects */
 .ingredients ul,
 .instructions ol {
-  padding-left: var(--spacing-md);
+  padding-inline-start: var(--spacing-md);
   list-style-position: outside;
 }
 
 .ingredients li,
 .instructions li {
-  padding-left: var(--spacing-xs);
+  padding-inline-start: var(--spacing-xs);
   margin-block-end: var(--li-spacing);
   width: 100%;
   display: list-item;
@@ -197,7 +198,7 @@ hr {
 }
 
 .instructions li strong {
-  margin-right: var(--spacing-xxs);
+  margin-inline-end: var(--spacing-xxs);
 }
 
 .ingredients ul li::marker,
@@ -209,7 +210,7 @@ hr {
 /* Nutrition Section */
 .nutrition p {
   color: var(--color-stone-600);
-  margin-block-end: var(--spacing-sm);
+  margin-block-end: var(--section-gap);
 }
 
 .nutrition-table {
@@ -223,7 +224,7 @@ hr {
 
 .nutrition-table th,
 .nutrition-table td {
-  padding-block: var(--spacing-xs);
+  padding-block: var(--td-block);
   padding-inline: var(--spacing-xl);
   text-align: left;
   color: var(--color-stone-600);
@@ -247,30 +248,32 @@ hr {
 
 .nutrition-table tr:last-child th,
 .nutrition-table tr:last-child td {
-  padding-bottom: 0;
+  padding-block-end: 0;
 }
 
 /* --- Mobile Styles (Up to 650px) --- */
-@media (max-width: 650px) {
+@media (max-width: 40.625rem) {
   body {
     justify-content: flex-start;
+    align-items: stretch;
     padding: 0;
     background-color: var(--color-white);
   }
 
   .recipe-card {
     max-width: 100%;
+    width: 100%;
     border-radius: 0;
     padding: var(--spacing-lg);
-    verflow: hidden;
+    overflow: hidden;
   }
 
   .recipe-image-container {
     margin-inline: calc(var(--card-padding) * -1);
-    margin-top: calc(var(--card-padding) * -1);
-    margin-bottom: var(--spacing-lg);
+    margin-block-start: calc(var(--card-padding) * -1);
+    margin-block-end: var(--spacing-lg);
     border-radius: 0;
     overflow: hidden;
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 2.187 / 1;
   }
 }
