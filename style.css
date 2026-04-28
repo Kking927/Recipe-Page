@@ -104,7 +104,7 @@ body {
   color: var(--color-brown-800);
   font-size: var(--fs-h3);
   font-weight: var(--fw-regular);
-  margin-block-end: var(--spacing-sm);
+  margin-block-end: var(--spacing-xs);
 }
 
 .prep-box h2 {
@@ -181,7 +181,7 @@ hr {
 .ingredients li,
 .instructions li {
   padding-left: var(--spacing-xs);
-  margin-bottom: var(--spacing-xs);
+  margin-block-end: var(--spacing-xxs);
   width: 100%;
   display: list-item;
   line-height: 1.5;
