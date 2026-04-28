@@ -104,7 +104,7 @@ body {
   color: var(--color-brown-800);
   font-size: var(--fs-h3);
   font-weight: var(--fw-regular);
-  margin-block-end: var(--spacing-md);
+  margin-block-end: var(--spacing-sm);
 }
 
 .prep-box h2 {
